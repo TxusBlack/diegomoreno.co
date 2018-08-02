@@ -220,7 +220,7 @@
         </div>
         <h2>If you want to see more project visit my <a target="_blank" href="https://github.com/TxusBlack"><img src="../assets/github.png" class="skills" alt="GitHub"></a></h2>
         <p>Or write me: <a href="mailto:iam@diegomoreno.co">iam@diegomoreno.co</a></p>
-        <span class="text-muted">This site was made with ❤️ and develop with<img src="https://cdn-images-1.medium.com/max/1600/1*wqYF-8Dmh7LhtLkKfERc3Q.png" class="skills" alt="Vue JS"></span>
+        <span class="text-muted">This site was made with ❤️ and powered by<img src="https://cdn-images-1.medium.com/max/1600/1*wqYF-8Dmh7LhtLkKfERc3Q.png" class="skills" alt="Vue JS"></span>
       </div>
     </transition>
   </div>
