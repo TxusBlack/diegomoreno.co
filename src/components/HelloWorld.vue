@@ -50,6 +50,78 @@
               </div>
             </div>
           </div>
+          <!-- Kuish App -->
+          <div class="col-6 item-portfolio">
+            <div class="card">
+              <img class="card-img-top mx-auto img-little" src="../assets/kuish.png" alt="Kiush">
+              <div class="card-body">
+                <h5 class="card-title">Kuish App</h5>
+                <p class="card-text">Adapt CSS in this app.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <img src="../assets/ionic.png" class="img-fluid skills" alt="Ionic">
+                  <img src="../assets/cordova.png" class="img-fluid skills" alt="Cordova">
+                  <img src="../assets/css3.png" class="img-fluid skills" alt="CSS3">
+                  <img src="../assets/nodejs.png" class="img-fluid skills" alt="NodeJS">
+                </li>
+              </ul>
+              <div class="card-body">
+                <h5>Web Link:</h5>
+                <a href="http://kuishapp.com" class="card-link">http://kuishapp.com</a>
+              </div>
+            </div>
+          </div>
+          <!-- MyBus -->
+          <div class="col-6 item-portfolio">
+            <div class="card">
+              <img class="card-img-top mx-auto img-little" src="../assets/mybus.png" alt="MyBus">
+              <div class="card-body">
+                <h5 class="card-title">MyBus <span class="text-info">(Prototype)</span></h5>
+                <p class="card-text">Mobile application that sends the location to Firebase and obtains it from a PWA built in Angular.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <img src="../assets/ionic.png" class="img-fluid skills" alt="Ionic">
+                  <img src="../assets/cordova.png" class="img-fluid skills" alt="Cordova">
+                  <img src="../assets/nodejs.png" class="img-fluid skills" alt="NodeJS">
+                  <img src="../assets/angular.png" class="img-fluid skills" alt="Angular">
+                  <img src="../assets/google_maps.png" class="img-fluid skills" alt="Google Maps">
+                  <img src="../assets/firebase.png" class="img-fluid skills" alt="Firebase">
+                </li>
+                <li class="list-group-item">
+                  <h5>Web Link: <span class="text-danger"></span></h5>
+                  <a href="https://mybusapp.herokuapp.com">https://mybusapp.herokuapp.com</a>
+                </li>
+                <li class="list-group-item">
+                  <h5>App Link: <span class="text-danger"></span></h5>
+                  <a href="https://play.google.com/store/apps/details?id=co.starklab.mybus">https://play.google.com/store/apps/details?id=co.starklab.mybus</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- BookMe -->
+          <div class="col-6 item-portfolio">
+            <div class="card">
+              <img class="card-img-top mx-auto img-little" src="../assets/bookme.png" alt="BookMe">
+              <div class="card-body">
+                <h5 class="card-title">BookMe</h5>
+                <p class="card-text">Social Network.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <img src="../assets/ionic.png" class="img-fluid skills" alt="Ionic">
+                  <img src="../assets/cordova.png" class="img-fluid skills" alt="Cordova">
+                  <img src="../assets/nodejs.png" class="img-fluid skills" alt="NodeJS">
+                  <img src="../assets/vue.png" class="img-fluid skills" alt="VueJS">
+                  <img src="../assets/graphql.png" class="img-fluid skills" alt="GraphQL">
+                </li>
+              </ul>
+              <div class="card-body">
+                <p class="text-danger">This app will be available soon</p>
+              </div>
+            </div>
+          </div>
           <!-- Museo -->
           <div class="col-6 item-portfolio">
             <div class="card">
@@ -143,78 +215,6 @@
                 <h5>Web Link:</h5>
                 <a href="http://fonpaz.org">http://fonpaz.org</a>
               </div>
-            </div>
-          </div>
-          <!-- Kuish App -->
-          <div class="col-6 item-portfolio">
-            <div class="card">
-              <img class="card-img-top mx-auto img-little" src="../assets/kuish.png" alt="Kiush">
-              <div class="card-body">
-                <h5 class="card-title">Kuish App</h5>
-                <p class="card-text">Adapt CSS in this app.</p>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <img src="../assets/ionic.png" class="img-fluid skills" alt="Ionic">
-                  <img src="../assets/cordova.png" class="img-fluid skills" alt="Cordova">
-                  <img src="../assets/css3.png" class="img-fluid skills" alt="CSS3">
-                  <img src="../assets/nodejs.png" class="img-fluid skills" alt="NodeJS">
-                </li>
-              </ul>
-              <div class="card-body">
-                <h5>Web Link:</h5>
-                <a href="http://kuishapp.com" class="card-link">http://kuishapp.com</a>
-              </div>
-            </div>
-          </div>
-          <!-- BookMe -->
-          <div class="col-6 item-portfolio">
-            <div class="card">
-              <img class="card-img-top mx-auto img-little" src="../assets/kuish.png" alt="Kiush">
-              <div class="card-body">
-                <h5 class="card-title">BookMe</h5>
-                <p class="card-text">Social Network.</p>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <img src="../assets/ionic.png" class="img-fluid skills" alt="Ionic">
-                  <img src="../assets/cordova.png" class="img-fluid skills" alt="Cordova">
-                  <img src="../assets/nodejs.png" class="img-fluid skills" alt="NodeJS">
-                  <img src="../assets/vue.png" class="img-fluid skills" alt="VueJS">
-                  <img src="../assets/graphql.png" class="img-fluid skills" alt="GraphQL">
-                </li>
-              </ul>
-              <div class="card-body">
-                <p class="text-danger">This app will be available soon</p>
-              </div>
-            </div>
-          </div>
-          <!-- MyBus -->
-          <div class="col-6 item-portfolio">
-            <div class="card">
-              <img class="card-img-top mx-auto img-little" src="../assets/mybus.png" alt="MyBus">
-              <div class="card-body">
-                <h5 class="card-title">MyBus <span class="text-info">(Prototype)</span></h5>
-                <p class="card-text">Mobile application that sends the location to Firebase and obtains it from a PWA built in Angular.</p>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <img src="../assets/ionic.png" class="img-fluid skills" alt="Ionic">
-                  <img src="../assets/cordova.png" class="img-fluid skills" alt="Cordova">
-                  <img src="../assets/nodejs.png" class="img-fluid skills" alt="NodeJS">
-                  <img src="../assets/angular.png" class="img-fluid skills" alt="Angular">
-                  <img src="../assets/google_maps.png" class="img-fluid skills" alt="Google Maps">
-                  <img src="../assets/firebase.png" class="img-fluid skills" alt="Firebase">
-                </li>
-                <li class="list-group-item">
-                  <h5>Web Link: <span class="text-danger"></span></h5>
-                  <a href="https://mybusapp.herokuapp.com">https://mybusapp.herokuapp.com</a>
-                </li>
-                <li class="list-group-item">
-                  <h5>App Link: <span class="text-danger"></span></h5>
-                  <a href="https://play.google.com/store/apps/details?id=co.starklab.mybus">https://play.google.com/store/apps/details?id=co.starklab.mybus</a>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
