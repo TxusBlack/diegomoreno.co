@@ -45,7 +45,7 @@
                 </li>
               </ul>
               <div class="card-body">
-                <!--<a href="#" class="card-link">More info</a> -->
+                <!--<a target="_blank" href="#" class="card-link">More info</a> -->
                 <p class="text-danger">This app will be available soon in iOS and Android</p>
               </div>
             </div>
@@ -68,7 +68,7 @@
               </ul>
               <div class="card-body">
                 <h5>Web Link:</h5>
-                <a href="http://kuishapp.com" class="card-link">http://kuishapp.com</a>
+                <a target="_blank" href="http://kuishapp.com" class="card-link">http://kuishapp.com</a>
               </div>
             </div>
           </div>
@@ -91,11 +91,11 @@
                 </li>
                 <li class="list-group-item">
                   <h5>Web Link: <span class="text-danger"></span></h5>
-                  <a href="https://mybusapp.herokuapp.com">https://mybusapp.herokuapp.com</a>
+                  <a target="_blank" href="https://mybusapp.herokuapp.com">https://mybusapp.herokuapp.com</a>
                 </li>
                 <li class="list-group-item">
                   <h5>App Link: <span class="text-danger"></span></h5>
-                  <a href="https://play.google.com/store/apps/details?id=co.starklab.mybus">https://play.google.com/store/apps/details?id=co.starklab.mybus</a>
+                  <a target="_blank" href="https://play.google.com/store/apps/details?id=co.starklab.mybus">https://play.google.com/store/apps/details?id=co.starklab.mybus</a>
                 </li>
               </ul>
             </div>
@@ -146,7 +146,7 @@
                 </li>
                 <li class="list-group-item">
                   <h5>App Link: <span class="text-danger">(Deprecated)</span></h5>
-                  <a href="https://play.google.com/store/apps/details?id=org.museodigital.paleo">https://play.google.com/store/apps/details?id=org.museodigital.paleo</a>
+                  <a target="_blank" href="https://play.google.com/store/apps/details?id=org.museodigital.paleo">https://play.google.com/store/apps/details?id=org.museodigital.paleo</a>
                 </li>
               </ul>
             </div>
@@ -167,11 +167,11 @@
                 </li>
                 <li class="list-group-item">
                   <h5>Web Link: <span class="text-danger">(Deprecated)</span></h5>
-                  <a href="http://ies.grupohydraunisangil.com">http://ies.grupohydraunisangil.com</a>
+                  <a target="_blank" href="http://ies.grupohydraunisangil.com">http://ies.grupohydraunisangil.com</a>
                 </li>
                 <li class="list-group-item">
                   <h5>App Link: <span class="text-danger">(In progress to Update)</span></h5>
-                  <a href="https://play.google.com/store/apps/details?id=com.unisangil.ies">https://play.google.com/store/apps/details?id=com.unisangil.ies</a>
+                  <a target="_blank" href="https://play.google.com/store/apps/details?id=com.unisangil.ies">https://play.google.com/store/apps/details?id=com.unisangil.ies</a>
                 </li>
               </ul>
             </div>
@@ -192,7 +192,7 @@
               </ul>
               <div class="card-body">
                 <h5>Web Link:</h5>
-                <a href="https://advandz.com">https://advandz.com</a>
+                <a target="_blank" href="https://advandz.com">https://advandz.com</a>
               </div>
             </div>
           </div>
@@ -213,11 +213,12 @@
               </ul>
               <div class="card-body">
                 <h5>Web Link:</h5>
-                <a href="http://fonpaz.org">http://fonpaz.org</a>
+                <a target="_blank" href="http://fonpaz.org">http://fonpaz.org</a>
               </div>
             </div>
           </div>
         </div>
+        <h2>If you want to see more project visit my <a target="_blank" href="https://github.com/TxusBlack"><img src="../assets/github.png" class="skills" alt="GitHub"></a></h2>
         <span class="text-muted">This site was made with ❤️ and develop with<img src="https://cdn-images-1.medium.com/max/1600/1*wqYF-8Dmh7LhtLkKfERc3Q.png" class="skills" alt="Vue JS"></span>
       </div>
     </transition>
@@ -323,7 +324,7 @@ h1 {
 }
 h2 {
   font-size: 24px;
-  margin: 20px 0 20px 0;
+  margin: 0 0 10px 0;
 }
 h1, h2 {
   font-weight: normal;
