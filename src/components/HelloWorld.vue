@@ -281,8 +281,6 @@ export default {
     inputName() {
       window.addEventListener("keypress", function(e) {
         if (!this.enter) {
-          this.nameUser += String.fromCharCode(e.keyCode);
-          console.log(this.nameUser);
           if (e.which === 13) {
             console.log('Enter');
             this.enter = true;
@@ -296,6 +294,14 @@ export default {
                 },1000);
               }, 500);
             },1000);
+          } else if (e.which === 8) {
+            console.log('Delete');
+            if (this.nameUser) {
+              this.nameUser = this.nameUser.slice(0, -1);
+            }
+          } else {
+            this.nameUser += String.fromCharCode(e.keyCode);
+            console.log(this.nameUser);
           }
         }
       }.bind(this));
