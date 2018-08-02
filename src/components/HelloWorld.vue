@@ -311,13 +311,13 @@ export default {
   mounted() {
     this.showText("Hi everyone!", -1, 50, 0);
     setTimeout(() => {
-      this.showText("I'm Diego, I'm developer and I hope that you like my portfolio!", -1, 50, 1);
+      this.showText("I'm Diego, I'm a developer and I hope that you like my portfolio!", -1, 50, 1);
       setTimeout(() => {
         this.showText("Please type your name and press enter...", 0, 50, 2);
         setTimeout(() => {
           this.inputName();
         }, 2000);
-      }, 4150);
+      }, 4250);
     }, 1850);
   }
 }
