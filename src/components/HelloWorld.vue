@@ -8,7 +8,11 @@
         <h1 v-if="title">{{ title }}</h1>
         <h2 v-if="subtitle">{{ subtitle }}</h2>
         <h2 v-if="subtitle1">{{ subtitle1 }}</h2>
-        <h2 v-if="nameUser">{{ nameUser }}</h2>
+        <div v-if="mobile.is">
+          <input type="text" class="form-control mx-auto" id="nameUser" v-model="nameUser" placeholder="Your Name">
+          <button v-on:click="nextPageFromMobile" class="btn btn-primary mb-2">Enter</button>
+        </div>
+        <h2 v-if="nameUser" :hidden="mobile.is">{{ nameUser }}</h2>
       </div>
     </transition>
     <transition
@@ -221,7 +225,7 @@
         </div>
         <h2>If you want to see more project visit my <a target="_blank" href="https://github.com/TxusBlack"><img src="../assets/github.png" class="skills" alt="GitHub"></a></h2>
         <p>Or write me: <a href="mailto:iam@diegomoreno.co">iam@diegomoreno.co</a></p>
-        <span class="text-muted">This site was made with ❤️ and powered by<img src="https://cdn-images-1.medium.com/max/1600/1*wqYF-8Dmh7LhtLkKfERc3Q.png" class="skills" alt="Vue JS"></span>
+        <span class="text-muted">This site was made with ❤️ and powered by<img src="../assets/vue.png" class="skills" alt="Vue JS"></span>
       </div>
     </transition>
   </div>
@@ -290,15 +294,7 @@ export default {
             console.log('Enter');
             this.enter = true;
             this.welcome = false;
-            setTimeout(() => {
-              this.home = true;
-              setTimeout(() => {
-                this.description = true;
-                setTimeout(() => {
-                  this.items = true;
-                },1000);
-              }, 500);
-            },1000);
+            this.timeout();
           } else if (e.which === 8) {
             console.log('Delete');
             if (this.nameUser) {
@@ -310,20 +306,36 @@ export default {
           }
         }
       }.bind(this));
+    },
+    timeout() {
+      setTimeout(() => {
+        this.home = true;
+        setTimeout(() => {
+          this.description = true;
+          setTimeout(() => {
+            this.items = true;
+          },1000);
+        }, 500);
+      },1000);
+    },
+    nextPageFromMobile() {
+      this.enter = true;
+      this.welcome = false;
+      this.timeout();
     }
   },
   mounted() {
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-      // is mobile..
-      this.mobile.is = true;
-    }
     this.showText("Hi everyone!", -1, 50, 0);
     setTimeout(() => {
       this.showText("I'm Diego, I'm a developer and I hope that you like my portfolio!", -1, 50, 1);
       setTimeout(() => {
         this.showText("Please type your name and press enter...", 0, 50, 2);
         setTimeout(() => {
-          this.inputName();
+          if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            this.mobile.is = true;
+          } else {
+            this.inputName();
+          }
         }, 2000);
       }, 4250);
     }, 1850);
@@ -357,6 +369,11 @@ a {
 .skills {
   height: 50px;
   width: auto;
+}
+input {
+  width: 50%;
+  margin-bottom: 10px;
+  margin-top: 30px;
 }
 img {
   padding: 10px;
