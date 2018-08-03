@@ -4,6 +4,7 @@
       name="welcome"
       leave-active-class="animated bounceOutUp">
       <div v-if="welcome">
+        <h1>{{ mobile.is }}</h1>
         <h1 v-if="title">{{ title }}</h1>
         <h2 v-if="subtitle">{{ subtitle }}</h2>
         <h2 v-if="subtitle1">{{ subtitle1 }}</h2>
@@ -239,7 +240,10 @@ export default {
       welcome: true,
       home: false,
       description: false,
-      items: false
+      items: false,
+      mobile: {
+        is: false
+      }
     }
   },
   methods: {
@@ -309,6 +313,10 @@ export default {
     }
   },
   mounted() {
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      // is mobile..
+
+    }
     this.showText("Hi everyone!", -1, 50, 0);
     setTimeout(() => {
       this.showText("I'm Diego, I'm a developer and I hope that you like my portfolio!", -1, 50, 1);
