@@ -367,7 +367,7 @@ a {
   width: auto;
 }
 input {
-  width: 50%;
+  width: 70%;
   margin-bottom: 10px;
   margin-top: 30px;
 }
