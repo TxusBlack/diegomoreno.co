@@ -4,7 +4,6 @@
       name="welcome"
       leave-active-class="animated bounceOutUp">
       <div v-if="welcome">
-        <h1>{{ mobile.is }}</h1>
         <h1 v-if="title">{{ title }}</h1>
         <h2 v-if="subtitle">{{ subtitle }}</h2>
         <h2 v-if="subtitle1">{{ subtitle1 }}</h2>
@@ -291,18 +290,15 @@ export default {
       window.addEventListener("keypress", function(e) {
         if (!this.enter) {
           if (e.which === 13) {
-            console.log('Enter');
             this.enter = true;
             this.welcome = false;
             this.timeout();
           } else if (e.which === 8) {
-            console.log('Delete');
             if (this.nameUser) {
               this.nameUser = this.nameUser.slice(0, -1);
             }
           } else {
             this.nameUser += String.fromCharCode(e.keyCode);
-            console.log(this.nameUser);
           }
         }
       }.bind(this));
