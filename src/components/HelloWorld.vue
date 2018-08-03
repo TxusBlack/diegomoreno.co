@@ -7,11 +7,11 @@
         <h1 v-if="title">{{ title }}</h1>
         <h2 v-if="subtitle">{{ subtitle }}</h2>
         <h2 v-if="subtitle1">{{ subtitle1 }}</h2>
-        <div v-if="mobile.is">
-          <input type="text" class="form-control mx-auto" id="nameUser" v-model="nameUser" placeholder="Your Name">
-          <button v-on:click="nextPageFromMobile" class="btn btn-primary mb-2">Enter</button>
-        </div>
-        <h2 v-if="nameUser" :hidden="mobile.is">{{ nameUser }}</h2>
+          <div v-if="mobile.is" class="animated bounceInDown">
+            <input type="text" class="form-control mx-auto" id="nameUser" v-model="nameUser" placeholder="Your Name">
+            <button v-on:click="nextPageFromMobile" class="btn btn-primary mb-2">Enter</button>
+          </div>
+          <h2 v-if="nameUser" :hidden="mobile.is">{{ nameUser }}</h2>
       </div>
     </transition>
     <transition
@@ -30,7 +30,7 @@
       <div class="container" v-if="items">
         <div class="row">
           <!-- RingVoz -->
-          <div class="col-6 item-portfolio">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 item-portfolio">
             <div class="card">
               <img class="card-img-top mx-auto img-little" src="../assets/RingVoz.png" alt="RingVoz">
               <div class="card-body">
@@ -55,7 +55,7 @@
             </div>
           </div>
           <!-- Kuish App -->
-          <div class="col-6 item-portfolio">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 item-portfolio">
             <div class="card">
               <img class="card-img-top mx-auto img-little" src="../assets/kuish.png" alt="Kiush">
               <div class="card-body">
@@ -77,7 +77,7 @@
             </div>
           </div>
           <!-- MyBus -->
-          <div class="col-6 item-portfolio">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 item-portfolio">
             <div class="card">
               <img class="card-img-top mx-auto img-little" src="../assets/mybus.png" alt="MyBus">
               <div class="card-body">
@@ -105,7 +105,7 @@
             </div>
           </div>
           <!-- BookMe -->
-          <div class="col-6 item-portfolio">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 item-portfolio">
             <div class="card">
               <img class="card-img-top mx-auto img-little" src="../assets/bookme.png" alt="BookMe">
               <div class="card-body">
@@ -127,7 +127,7 @@
             </div>
           </div>
           <!-- Museo -->
-          <div class="col-6 item-portfolio">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 item-portfolio">
             <div class="card">
               <img class="card-img-top mx-auto img-little" src="../assets/MuseoDigital.png" alt="Museo">
               <div class="card-body">
@@ -156,7 +156,7 @@
             </div>
           </div>
           <!-- IES -->
-          <div class="col-6 item-portfolio">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 item-portfolio">
             <div class="card">
               <img class="card-img-top mx-auto img-little" src="../assets/ies.png" alt="IES">
               <div class="card-body">
@@ -181,7 +181,7 @@
             </div>
           </div>
           <!-- Advandz -->
-          <div class="col-6 item-portfolio">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 item-portfolio">
             <div class="card">
               <img class="card-img-top mx-auto img-little" src="../assets/advandz.png" alt="Advandz">
               <div class="card-body">
@@ -201,7 +201,7 @@
             </div>
           </div>
           <!-- FonPaz -->
-          <div class="col-6 item-portfolio">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 item-portfolio">
             <div class="card">
               <img class="card-img-top mx-auto" src="../assets/fonpaz.png" alt="FonPaz">
               <div class="card-body">
@@ -328,7 +328,9 @@ export default {
         this.showText("Please type your name and press enter...", 0, 50, 2);
         setTimeout(() => {
           if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            this.mobile.is = true;
+            setTimeout(() => {
+              this.mobile.is = true;
+            }, 500);
           } else {
             this.inputName();
           }
