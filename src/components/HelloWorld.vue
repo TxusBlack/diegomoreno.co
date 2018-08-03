@@ -315,7 +315,7 @@ export default {
   mounted() {
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
       // is mobile..
-
+      this.mobile.is = true;
     }
     this.showText("Hi everyone!", -1, 50, 0);
     setTimeout(() => {
