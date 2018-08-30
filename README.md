@@ -1,6 +1,6 @@
-# diegomorenoco
+# diegomoreno.co
 
-> My Portfolio
+> Welcome to my Portfolio
 
 ## Build Setup
 
