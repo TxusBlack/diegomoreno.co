@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import SnowStorm from 'react-snowstorm';
 
 import './styles/global.css'
+import snowStorm from './js/snow.js';
 
 export default class Main extends Component {
 
@@ -24,10 +24,10 @@ export default class Main extends Component {
       <main>
         <h1 ref='title'>{this.title}</h1>
         <h2 ref='subtitle'><a href='mailto:iam@diegomoreno.co'>iam@diegomoreno.co</a></h2>
-        <SnowStorm
+        {/* <SnowStorm
           followMouse={false}
           snowStick={false}
-        />
+        /> */}
       </main>
     )
   }
