@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import './styles/global.css'
+import './styles/global.css';
+// eslint-disable-next-line no-unused-vars
 import snowStorm from './js/snow.js';
 
 export default class Main extends Component {
