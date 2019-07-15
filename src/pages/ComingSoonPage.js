@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-import './styles/global.css';
+import '../assets/css/global.css';
 // eslint-disable-next-line no-unused-vars
-import snowStorm from './js/snow.js';
+import snowStorm from '../assets/js/snow.js';
 
-export default class Main extends Component {
+export default class ComingSoonPage extends Component {
 
   constructor(state) {
     super(state);

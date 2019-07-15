@@ -15,16 +15,6 @@ body * {
   box-sizing: inherit;
 }
 
-.cf:before,
-.cf:after {
-  content: " ";
-  display: table;
-}
-
-.cf:after {
-  clear: both;
-}
-
 h1 {
   font-size: 46px;
   font-weight: 200;
@@ -47,4 +37,8 @@ a {
   height: 100%;
   align-items: center;
   justify-content: center;
+}
+
+.App {
+  text-align: center;
 }
